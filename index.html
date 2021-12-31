@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="bannertext">
+                <h1 class="banner_txt">Dojo Weather</h1>
+                <div class="cities">
+                    <a href="#" class="city" onclick="cityClick()">Burbank</a>
+                    <a href="#" class="city" onclick="cityClick()">Chicago</a>
+                    <a href="#" class="city" onclick="cityClick()">Dallas</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="body">
+            <div class="header">
+                <h1 class="san">San Jose</h1>
+                <div class="temp_sel">
+                    <label class=temp_txt for="temp">show temprature in </label>
+                    <select class="temp" name="temprature" id="tempID" onchange="tempConvert(this)">
+                        <option value="C" id="far">°C</option>
+                        <option value="F" id="cel">°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="week">
+                <div class="days">
+                    <h2 class="day">Today</h2>
+                    <img class="weather_img" src="assets/some_rain.png">    
+                    <p class="weather_desc">some rain</p>
+                    <div class="temp_range">
+                        <h3 class="high" id="temp1">24°</h3>
+                        <h3 class="low" id="temp2">18°</h3>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2 class="day">Tomorrow</h2>
+                    <img class="weather_img" src="assets/some_sun.png">    
+                    <p class="weather_desc">some sun</p>
+                    <div class="temp_range">
+                        <h3 class="high" id="temp3">27°</h3>
+                        <h3 class="low" id="temp4">19°</h3>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2 class="day">Friday</h2>
+                    <img class="weather_img" src="assets/some_clouds.png">    
+                    <p class="weather_desc">some clouds</p>
+                    <div class="temp_range">
+                        <h3 class="high" id="temp5">21°</h3>
+                        <h3 class="low" id="temp6">16°</h3>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2 class="day">Saturday</h2>
+                    <img class="weather_img" src="assets/some_sun.png">    
+                    <p class="weather_desc">some sun</p>
+                    <div class="temp_range">
+                        <h3 class="high" id="temp7">26°</h3>
+                        <h3 class="low" id="temp8">21°</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cookies" id="wipe">
+                <img class="cookie_img" src="assets/cookie.png">
+                <div class="cookie_txt">
+                    <h3 class="cookie_title">Stop! Cookie Time!</h3>
+                    <p class="cookie_desc">We use cookies (sadly not the edible ones) to personize content and 
+                        ads to provide soical media features and to analyse our traffic. <span><a href="#">Read more...</a></span></p>
+                </div>
+                <button class="accept" onclick="eraser(wipe)">I Accpet</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
